@@ -54,10 +54,10 @@ header {
         }
     }
     #hero {
-        padding: 90px 0 0;
+        padding: 100px 0 0;
         h1 {
             margin: 0;
-            font: 400 42pt "EB Garamond", "Garamond", serif;
+            font: 400 36pt "EB Garamond", "Garamond", serif;
             -webkit-font-feature-settings: "hlig";
             -moz-font-feature-settings: "hlig";
             -o-font-feature-settings: "hlig";
@@ -71,7 +71,30 @@ header {
             font-family: "EB Garamond";
             font-style: italic;
             font-size: 20pt;
-            margin-top: 50px;
+            margin-top: 86px;
         }
+    }
+}
+
+#features {
+    div {
+        margin: 200px 0;
+        overflow: hidden;
+    }
+    dt {
+        font: 300 20pt "Roboto", "Helvetica Neue", sans-serif;
+    }
+    dd {
+        margin: 0;
+        font: 400 18pt "EB Garamond", "Garamond", serif;
+    }
+    article {
+        max-width: 33%;
+    }
+    div:nth-child(odd) img, #features div:nth-child(even) article {
+        float: right;
+    }
+    div:nth-child(even) img, div:nth-child(odd) article {
+        float: left;
     }
 }
