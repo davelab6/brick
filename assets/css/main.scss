@@ -12,6 +12,7 @@ body {
     margin: 0;
     padding: 0;
     font: 400 14pt "Roboto", "Helvetica Neue", sans-serif;
+    color: #222;
     -webkit-text-rendering: optimizeLegibility;
     -moz-text-rendering: optimizeLegibility;
     -o-text-rendering: optimizeLegibility;
@@ -26,7 +27,7 @@ a {
 }
 
 header {
-    height: 600px;
+    height: 720px;
     width: 100%;
     background: url(/assets/images/bg.jpg) #FFF no-repeat;
     background-size: cover;
@@ -49,52 +50,142 @@ header {
         a {
             line-height: 32px;
             color: #FFF;
-            // text-transform: uppercase;
-            font-weight: 300;
+            text-transform: uppercase;
+            font-size: 12pt;
+            font-weight: 400;
+            letter-spacing: 1px;
         }
     }
     #hero {
         padding: 100px 0 0;
+        color: #FFF;
         h1 {
             margin: 0;
-            font: 400 36pt "EB Garamond", "Garamond", serif;
+            font: 400 36pt "Karla", "Futura", sans-serif;
+            letter-spacing: -2px;
             -webkit-font-feature-settings: "hlig";
             -moz-font-feature-settings: "hlig";
             -o-font-feature-settings: "hlig";
             font-feature-settings: "hlig";
             line-height: 1.2em;
-            color: #FFF;
+        }
+        p {
+            font-size: 14pt;
+            font-weight: 300;
+            max-width: 400px;
+            line-height: 1.5;
+            margin: 1em 0;
+            padding: 10px 0 15px 0;
+            color: #fdf0ee;
         }
         .ct {
             display: inline-block;
             color: #FFF;
-            font-family: "EB Garamond";
+            font-family: "Roboto", "Helvetica Neue", sans-serif;
             font-style: italic;
-            font-size: 20pt;
-            margin-top: 86px;
+            font-size: 14pt;
         }
     }
 }
 
 #features {
     div {
-        margin: 200px 0;
-        overflow: hidden;
+        padding: 200px 0;
+        border-bottom: 1px solid #ee6650;
     }
-    dt {
-        font: 300 20pt "Roboto", "Helvetica Neue", sans-serif;
+    div:last-of-type {
+        border: none;
     }
-    dd {
-        margin: 0;
-        font: 400 18pt "EB Garamond", "Garamond", serif;
+    h1 {
+        max-width: 66%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    h1 {
+        font: 400 32pt/36pt "Karla", "Futura", sans-serif;
+        color: #ee6650;
     }
     article {
-        max-width: 33%;
+        @extend .container;
     }
-    div:nth-child(odd) img, #features div:nth-child(even) article {
-        float: right;
+    p {
+        line-height: 1.5em;
     }
-    div:nth-child(even) img, div:nth-child(odd) article {
-        float: left;
+
+    div.beautiful {
+        img {
+            float: right;
+            width: 33%;
+            padding: 100px 100px 100px 50px;
+        }
+        p {
+            padding: 150px 0 100px 0;
+            max-width: 40%;
+            margin: 25px 0 0 100px;
+        }
     }
+    div.fast {
+        position: relative;
+        padding-bottom: 500px;
+        overflow: hidden;
+        p {
+            max-width: 66%;
+            margin: 50px auto;
+        }
+        img {
+            position: absolute;
+            width: 700px;
+            left: 50%;
+            margin-left: -350px;
+            bottom: -250px;
+        }
+    }
+    div.open {
+        p {
+            max-width: 66%;
+            margin: 50px auto;
+        }
+        img {
+            display: block;
+            width: 100%;
+            margin: 100px auto 50px auto;
+        }
+    }
+}
+
+#sponsors {
+    width: 100%;
+    background: #BB503F url(/assets/images/bg.jpg);
+    background-size: cover;
+    text-align: center;
+    h2 {
+        font: 300 14pt "Roboto", "Helvetica Neue", sans-serif;
+        color: #fdf0ee;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        padding: 75px 0 59px 0;
+        margin: 0;
+    }
+    div.logos {
+        padding-bottom: 75px;
+    }
+    a {
+        display: inline-block;
+    }
+    img {
+        display: inline-block;
+        vertical-align: top;
+        height: 95px;
+    }
+    a:last-of-type {
+        margin-left: 100px;
+        img {
+            height: 75px;
+        }
+    }
+}
+
+footer {
+    height: 400px;
+    background: #ee6650;
 }
