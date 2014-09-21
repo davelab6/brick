@@ -21,6 +21,7 @@ body {
 
 a {
     text-decoration: none;
+    color: #A55;
     &:hover {
         opacity: 0.8;
     }
@@ -34,27 +35,6 @@ header {
     #logo {
         width: 32px;
         height: 32px;
-    }
-    nav {
-        padding: 100px 0 0;
-        ul {
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            float: right;
-        }
-        li {
-            display: inline-block;
-            margin-left: 50px;
-        }
-        a {
-            line-height: 32px;
-            color: #FFF;
-            text-transform: uppercase;
-            font-size: 12pt;
-            font-weight: 400;
-            letter-spacing: 1px;
-        }
     }
     #hero {
         padding: 100px 0 0;
@@ -84,6 +64,30 @@ header {
             font-family: "Roboto", "Helvetica Neue", sans-serif;
             font-style: italic;
             font-size: 14pt;
+        }
+    }
+}
+
+header, footer {
+    nav {
+        padding: 100px 0 0;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            float: right;
+        }
+        li {
+            display: inline-block;
+            margin-left: 50px;
+        }
+        a {
+            line-height: 32px;
+            color: #FFF;
+            text-transform: uppercase;
+            font-size: 12pt;
+            font-weight: 400;
+            letter-spacing: 1px;
         }
     }
 }
@@ -186,6 +190,30 @@ header {
 }
 
 footer {
-    height: 400px;
     background: #ee6650;
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    a {
+        color: rgba(255,255,255,0.75);
+    }
+    nav {
+        padding: 100px 0 50px 0;
+        ul {
+            float: none;
+            li:first-of-type {
+                margin-left: 0;
+            }
+        }
+        .logo {
+            display: inline-block;
+            margin-bottom: 25px;
+        }
+    }
+    .credits {
+        margin: 0 auto;
+        padding: 0 0 100px 0;
+        font: 300 10pt "Roboto", "Helvetica Neue", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+    }
 }
