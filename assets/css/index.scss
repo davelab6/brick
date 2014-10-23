@@ -1,0 +1,51 @@
+---
+---
+
+header {
+    height: 720px;
+    width: 100%;
+    background: url(/assets/images/bg.jpg) #FFF no-repeat;
+    background-size: cover;
+    #logo {
+        width: 32px;
+        height: 32px;
+    }
+    #hero {
+        padding: 100px 0 0;
+        color: #FFF;
+        h1 {
+            margin: 0;
+            font: 400 36pt "Karla", "Futura", sans-serif;
+            letter-spacing: -2px;
+            -webkit-font-feature-settings: "hlig";
+            -moz-font-feature-settings: "hlig";
+            -o-font-feature-settings: "hlig";
+            font-feature-settings: "hlig";
+            line-height: 1.2em;
+        }
+        p {
+            font-size: 14pt;
+            font-weight: 300;
+            max-width: 400px;
+            line-height: 1.5;
+            margin: 1em 0;
+            padding: 10px 0 15px 0;
+            color: #fdf0ee;
+        }
+        .ct {
+            display: inline-block;
+            color: #FFF;
+            font-family: "Roboto", "Helvetica Neue", sans-serif;
+            font-style: italic;
+            font-size: 14pt;
+        }
+    }
+}
+
+header, footer {
+    nav {
+        a {
+            color: #FFF;
+        }
+    }
+}
