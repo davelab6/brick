@@ -3,3 +3,7 @@ title: Brick
 collections:
   fonts:
     output: true
+
+sass:
+  sass_dir: assets/css/_partials
+  style: :compressed

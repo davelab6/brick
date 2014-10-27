@@ -1,0 +1,15 @@
+// Site typography
+
+@mixin body-typography {
+    font: normal 12pt "Roboto", "Helvetica Neue", "Arial", sans-serif;
+    text-rendering: optimizeLegibility;
+    color: $dark-gray;
+}
+
+@mixin garamond {
+    font-family: "EB Garamond", "Adobe Garamond Pro", "Garamond", serif;
+}
+
+@mixin league-spartan {
+    font-family: "League Spartan", "Avenir Next", "Futura", sans-serif;
+}

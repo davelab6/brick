@@ -1,0 +1,61 @@
+---
+---
+
+// Imports
+@import "colours";
+@import "typography";
+
+// General styles
+section {
+    h1 {
+        @include league-spartan;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 1em;
+        color: $gray;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        text-align: center;
+
+        &:before {
+            display: block;
+            position: relative;
+            top: 9px;
+            content: "";
+            border-bottom: 3px solid $gray;
+        }
+    }
+}
+
+#intro {
+    padding: 50px 0 225px 0;
+    text-align: center;
+
+    .title {
+        display: block;
+        @include garamond;
+        font-size: 56pt;
+        line-height: 1.1em;
+        letter-spacing: 1px;
+        -webkit-font-feature-settings: "hlig";
+        -moz-font-feature-settings: "hlig";
+        -o-font-feature-settings: "hlig";
+        font-feature-settings: "hlig";
+    }
+
+    .league-spartan {
+        @include league-spartan;
+        font-size: 32pt;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    .btns {
+        font-size: 0.8em;
+        margin-top: 4em;
+
+        a:first-child {
+            margin-right: 24px;
+        }
+    }
+}
