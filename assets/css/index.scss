@@ -7,14 +7,10 @@
 
 // General styles
 section {
-    h1 {
-        @include league-spartan;
-        font-size: 20px;
-        font-weight: bold;
-        line-height: 1em;
-        color: $gray;
-        text-transform: uppercase;
-        letter-spacing: 5px;
+    margin-bottom: 200px;
+
+    .title {
+        display: block;
         text-align: center;
 
         &:before {
@@ -22,7 +18,22 @@ section {
             position: relative;
             top: 9px;
             content: "";
-            border-bottom: 3px solid $gray;
+            border-bottom: 3px solid $light-gray;
+        }
+
+        h1 {
+            display: inline-block;
+            position: relative;
+            margin: 0;
+            @include league-spartan;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1em;
+            color: $gray;
+            text-transform: uppercase;
+            letter-spacing: 6px;
+            background: #FFF;
+            padding: 0 1.5em;
         }
     }
 }
