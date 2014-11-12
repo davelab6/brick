@@ -1,13 +1,17 @@
 // Site typography
 
+$body-size: 12pt;
+
 @mixin body-typography {
-    font: normal 12pt "Roboto", "Helvetica Neue", "Arial", sans-serif;
-    text-rendering: optimizeLegibility;
-    color: $dark-gray;
+    font-family: "Roboto", "Helvetica Neue", "Arial", sans-serif;
 }
 
 @mixin garamond {
     font-family: "EB Garamond", "Adobe Garamond Pro", "Garamond", serif;
+}
+
+@mixin caslon {
+    font-family: "Libre Caslon Text", "Adobe Caslon Pro", "Caslon", serif;
 }
 
 @mixin league-spartan {

@@ -2,8 +2,7 @@
 ---
 
 // Imports
-@import "colours";
-@import "typography";
+@import "global";
 
 // Global tag styles
 * {
@@ -15,7 +14,10 @@
 body {
     margin: 0;
     padding: 0;
+    font-size: $body-size;
     @include body-typography;
+    text-rendering: optimizeLegibility;
+    color: $dark-gray;
 }
 
 a {
@@ -26,42 +28,14 @@ a {
     }
 }
 
-// Global classes
-.wrapper {
-    width: 90%;
-    max-width: 1000px;
-    margin: 0 auto;
+p {
+    font-size: 1.1em;
+    line-height: 1.7em;
+    @include caslon;
 }
 
-.clearfix {
-    &:before,
-    &:after {
-        content: " ";
-        display: table;
-    }
-    &:after {
-        clear: both;
-    }
-}
-
-.btn {
-    text-transform: uppercase;
-    font-weight: 500;
-    letter-spacing: 2px;
-    line-height: 1em;
-    display: inline-block;
-    padding: 1em 2.1em;
-    border: 3px solid $accent;
-    border-radius: 1.6em;
-
-    &.primary {
-        background: $accent;
-        color: #FFF;
-    }
-}
-
-// Header
-header {
+// Header & footer
+header, footer {
     @extend .wrapper;
     @extend .clearfix;
     padding: 100px 0;
@@ -100,7 +74,7 @@ header {
 // Fonts list
 .fonts {
     list-style-type: none;
-    margin: 50px 0;
+    margin: 0;
     padding: 0;
     @extend .clearfix;
 
@@ -125,9 +99,9 @@ header {
     .description {
         width: 100%;
         padding: 20px;
-        border-left: 1px solid #EAEAEA;
-        border-right: 1px solid #EAEAEA;
-        border-bottom: 3px solid #EAEAEA;
+        border-left: 1px solid $dark-white;
+        border-right: 1px solid $dark-white;
+        border-bottom: 3px solid $dark-white;
         white-space: nowrap;
 
         h2, h3 {
@@ -147,5 +121,36 @@ header {
         h3 {
             font-weight: normal;
         }
+    }
+}
+
+footer {
+    margin: 0 auto 100px;
+    padding: 0;
+
+    .top {
+        @extend .clearfix;
+        padding: 20px;
+        background: $accent;
+
+        a {
+            color: #FFF;
+
+            &:hover {
+                color: $dark-white;
+            }
+        }
+    }
+
+    p {
+        padding: 20px;
+        border: 1px solid $dark-white;
+        border-top-width: 0;
+        border-bottom-width: 3px;
+        margin: 0;
+
+        @include body-typography;
+        font-weight: 100;
+        font-size: 1em;
     }
 }
