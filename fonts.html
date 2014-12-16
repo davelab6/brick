@@ -1,0 +1,13 @@
+---
+layout: default
+permalink: /fonts/
+css:
+  - fonts.css
+---
+
+<p>Fonts:</p>
+<ul>
+{% for font in site.fonts %}
+    <li>{{ font.family }} by {{ font.designer }}</li>
+{% endfor %}
+</ul>
